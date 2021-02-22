@@ -1,0 +1,410 @@
+html {
+  font-size: 16px;
+  font-family: 'Roboto', serif;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+h1  {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1B202B;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #C5CAD7;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: #687083;
+
+}
+
+a:hover {
+    color: darkgray;
+}
+
+/*General @1024px*/
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 1.25;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+}
+
+/*Header*/
+
+header {
+  height: 70px;
+  width: 100%;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.desktop_menu {
+  display: inline-flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+ul li a {
+  margin-left: 25px;
+  list-style: none;
+  text-align: center;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #1B202B;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bullets li {
+  margin-left: 30px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #1B202B;
+  font-family: 'Roboto', sans-serif;
+  list-style: disc;
+}
+
+
+
+.home {
+  display: inline-flex;
+}
+
+.mobile_menu {
+  display: none;
+}
+
+/*Header - Mobile*/
+
+@media only screen and (max-width: 768px) {
+  #logo, .desktop_menu {
+    display: none;
+  }
+
+  .mobile_menu {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 16px;
+  }
+
+}
+
+
+
+/*Home Page Banner section*/
+
+.banner-area {
+	width: 100%;
+	height: 500px;
+	position: fixed;
+	top: 70px;
+	background-size: cover;
+	background-position: center center;
+}
+
+.banner-area h2{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-family: poppins;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+/*Home page content section*/
+
+.content-area {
+	width: auto;
+	position: relative;
+	top: 450px;
+	background: #ebebeb;
+	height: 1500px;
+  padding-left: 40px;
+  padding-right: 40px;
+	margin: 0 auto;
+}
+
+.content-area h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+.content-area p {
+	padding: 2% 0px;
+	font-family: poppins;
+	line-height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Manufacturing Banner section*/
+
+.banner {
+  display: flex;
+  vertical-align: baseline;
+  margin-top: -30px;
+}
+
+.banner_image {
+  display: flex;
+  flex-basis: 50%;
+  height: auto;
+  margin: 32px 20px 32px 24px;
+}
+
+.banner_text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  justify-content: center;
+  align-items: left;
+  width: 300px;
+}
+
+.banner_header {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: grey;
+}
+
+.banner_subtext {
+  font-size: 0.85rem;
+  color: darkgrey;
+}
+
+.button {
+  background-color: #001c71;
+  width: 90%;
+  margin-right: 16px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 100ms ease 150ms;
+}
+
+/*Video Section*/
+
+.video-text-header h1 {
+  color: RGB(0, 23, 113);
+  font-family: 'Roboto', sans-serif;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.video-text-header p {
+  display: flex-wrap;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.video-subtext h2, p {
+  display: flex-wrap;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-top: 20px;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: White;
+}
+
+.button h3:hover {
+  background-color: #C5CAD7;
+  color: Black;
+}
+
+/*Manufacturing Banner @1024px*/
+
+@media only screen and (max-width: 1024px) {
+  .banner {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+  }
+
+  h2 {
+    padding-bottom: 5px;
+  }
+
+  .banner_image {
+    display: flex;
+    height: auto;
+    margin: 2rem;
+  }
+
+  .banner_text {
+    width: 50%;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin-left: 0px;
+  }
+
+  .banner_text .button {
+    width: 80%;
+  }
+}
+
+/*Manufacturing Banner - Mobile*/
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  h2 {
+    padding-bottom: 5px;
+  }
+
+  .banner_image {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-left: -24px;
+  }
+
+  .banner_text {
+    margin: 0px 32px 32px -64px;
+    text-align: left;
+    width: 80%;
+    display: flex;
+  }
+
+  .banner_text .button {
+    width: 80%;
+    background-color: #001c71;
+  }
+}
+
+
+h3 {
+  display: block;
+  font-size: .75rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.2em;
+  margin: 0.25rem 0;
+}
+
+/* Manufacturing interactive map */
+area {
+  display: inline;
+  cursor: pointer;
+}
+
+map {
+    display: inline;
+}
+
+.embedIframe {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.embedIframe h1 {
+    color: darkgrey;
+}
+
+/* Collateral section */
+
+.row {
+  flex-wrap: wrap
+  display: inline-flex;
+}
+
+.col-xs-12 {
+  color: darkgrey;
+}
+
+.containerCS {
+  display: inline-flex;
+  position: relative;
+  max-width: 400px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+  padding: 40px; /* Some padding */
+}
+
+.containerCS .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 50%;
+  padding: 20px; /* Some padding */
+
+  /* individual presentation slides */
+  .presentations img{
+    display: inline-flex;
+    padding: 1rem;
+    vertical-align: baseline;
+
+  /* media css rules */
+  @media only screen and (max-width: 1024px) {
+    body {
+      font-size: 16px;
+      }
+  }
